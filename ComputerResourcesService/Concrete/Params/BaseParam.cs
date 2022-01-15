@@ -8,6 +8,7 @@ namespace ComputerResourcesService.Concrete.Params
     public abstract class BaseParam : IParam
     {
         public object Value { get; set; }
+        public abstract string GetParamCode();
 
         public abstract string GetParamName();
 

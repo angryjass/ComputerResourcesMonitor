@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xTc7/VIoSYMlPqzovX3RUqqFEz7Lw4YF9Kz0thmO2Al2regmgIn4ziBFLbkZ5GZ459VjJH2uLoDMb2Yj1m7PNw==",
+  "dgSpecHash": "zlFQg/GKEei3qGCdKBv3VPa2bgOoEh836Azr4POHZteGrYeUzcL9Q+J41p/BzLg5h9cvKU/1UBSL+OUS/TmrLQ==",
   "success": true,
   "projectFilePath": "C:\\PP\\ComputerResourcesMonitor\\ComputerResourcesService\\ComputerResourcesService.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\GL703GM\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\GL703GM\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\GL703GM\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
+    "C:\\Users\\GL703GM\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\GL703GM\\.nuget\\packages\\runtime.linux-arm.runtime.native.system.io.ports\\5.0.0\\runtime.linux-arm.runtime.native.system.io.ports.5.0.0.nupkg.sha512",
     "C:\\Users\\GL703GM\\.nuget\\packages\\runtime.linux-arm64.runtime.native.system.io.ports\\5.0.0\\runtime.linux-arm64.runtime.native.system.io.ports.5.0.0.nupkg.sha512",
     "C:\\Users\\GL703GM\\.nuget\\packages\\runtime.linux-x64.runtime.native.system.io.ports\\5.0.0\\runtime.linux-x64.runtime.native.system.io.ports.5.0.0.nupkg.sha512",

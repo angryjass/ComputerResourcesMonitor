@@ -1,4 +1,6 @@
 ﻿using ComputerResourcesService.Abstract;
+using ComputerResourcesService.Concrete.DTO;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -15,9 +17,10 @@ namespace ComputerResourcesService.Concrete.Senders
         }
         public override void Send(IParam param)
         {
-            HttpContent httpContent = new StringContent(param.ToString());
+            var stringContent = JsonConvert.SerializeObject(new Packet(param));
+            HttpContent httpContent = new StringContent(stringContent, Encoding.UTF8, "application/json");
 
-            httpClient.PostAsync(ConfigurationManager.ConnectionStrings["API"].ConnectionString, httpContent);
+            httpClient.PostAsync(ConfigurationManager.ConnectionStrings["CRMQ"].ConnectionString, httpContent);
         }
     }
 }

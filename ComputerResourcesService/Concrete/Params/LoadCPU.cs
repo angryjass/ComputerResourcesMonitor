@@ -12,6 +12,11 @@ namespace ComputerResourcesService.Concrete.Params
             SetValue(value);
         }
 
+        public override string GetParamCode()
+        {
+            return "cpu_load";
+        }
+
         public override string GetParamName()
         {
             return "Загрузка процессора";
@@ -29,7 +34,7 @@ namespace ComputerResourcesService.Concrete.Params
 
         public override string ToString()
         {
-            return "cpu_load: " + GetValue();
+            return GetParamCode() + ": " + GetValue();
         }
     }
 }
