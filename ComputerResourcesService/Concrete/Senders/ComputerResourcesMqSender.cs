@@ -3,14 +3,18 @@ using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Net.Http;
-
-namespace ComputerResourcesService.Classes
+using System.Text;
+namespace ComputerResourcesService.Concrete.Senders
 {
-    public static class PacketsSender
+    public class ComputerResourcesMqSender : BaseSender
     {
-        public static void Send(IParam param)
+        readonly HttpClient httpClient;
+        public ComputerResourcesMqSender()
         {
-            HttpClient httpClient = new HttpClient();
+            httpClient = new HttpClient();
+        }
+        public override void Send(IParam param)
+        {
             HttpContent httpContent = new StringContent(param.ToString());
 
             httpClient.PostAsync(ConfigurationManager.ConnectionStrings["API"].ConnectionString, httpContent);

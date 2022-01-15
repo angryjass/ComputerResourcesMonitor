@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ComputerResourcesService.Concrete
+namespace ComputerResourcesService.Concrete.Params
 {
     class LoadCPU : BaseParam
     {

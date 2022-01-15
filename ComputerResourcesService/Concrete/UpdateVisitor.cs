@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ComputerResourcesService.Classes
+namespace ComputerResourcesService.Concrete
 {
     public class UpdateVisitor : IVisitor
     {
