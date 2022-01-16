@@ -1,4 +1,4 @@
-﻿using ComputerResourcesService.Abstract;
+﻿using ComputerResourcesBase.Abstract;
 using System;
 using System.Collections.Generic;
 using System.Text;

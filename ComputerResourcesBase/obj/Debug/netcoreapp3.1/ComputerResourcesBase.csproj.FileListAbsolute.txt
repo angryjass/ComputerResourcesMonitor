@@ -1,0 +1,10 @@
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\bin\Debug\netcoreapp3.1\ComputerResourcesBase.deps.json
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\bin\Debug\netcoreapp3.1\ComputerResourcesBase.dll
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\bin\Debug\netcoreapp3.1\ComputerResourcesBase.pdb
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\obj\Debug\netcoreapp3.1\ComputerResourcesBase.csproj.AssemblyReference.cache
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\obj\Debug\netcoreapp3.1\ComputerResourcesBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\obj\Debug\netcoreapp3.1\ComputerResourcesBase.AssemblyInfoInputs.cache
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\obj\Debug\netcoreapp3.1\ComputerResourcesBase.AssemblyInfo.cs
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\obj\Debug\netcoreapp3.1\ComputerResourcesBase.csproj.CoreCompileInputs.cache
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\obj\Debug\netcoreapp3.1\ComputerResourcesBase.dll
+C:\PP\ComputerResourcesMonitor\ComputerResourcesBase\obj\Debug\netcoreapp3.1\ComputerResourcesBase.pdb

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ComputerResourcesService.Abstract
+namespace ComputerResourcesBase.Abstract
 {
     public interface IParam
     {

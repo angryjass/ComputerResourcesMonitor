@@ -320,6 +320,16 @@
             "rid": "win"
           }
         }
+      },
+      "ComputerResourcesBase/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/ComputerResourcesBase.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ComputerResourcesBase.dll": {}
+        }
       }
     }
   },
@@ -956,10 +966,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "ComputerResourcesBase/1.0.0": {
+      "type": "project",
+      "path": "../ComputerResourcesBase/ComputerResourcesBase.csproj",
+      "msbuildProject": "../ComputerResourcesBase/ComputerResourcesBase.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "ComputerResourcesBase >= 1.0.0",
       "LibreHardwareMonitorLib >= 0.8.9",
       "Newtonsoft.Json >= 13.0.1",
       "System.Configuration.ConfigurationManager >= 5.0.0"
@@ -999,7 +1015,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\PP\\ComputerResourcesMonitor\\ComputerResourcesBase\\ComputerResourcesBase.csproj": {
+              "projectPath": "C:\\PP\\ComputerResourcesMonitor\\ComputerResourcesBase\\ComputerResourcesBase.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

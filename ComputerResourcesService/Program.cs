@@ -34,9 +34,9 @@ namespace ComputerResourcesService
                     LoadCPU loadCPU_info = new LoadCPU(cpu_total_sensor.Value);
                     Console.WriteLine($"{loadCPU_info.GetParamName()}: {loadCPU_info.GetValue()}");
 
-                    //sender.Send(loadCPU_info);
+                    sender.Send(loadCPU_info);
                     cpu_total_sensor.Hardware.Update();
-                    Thread.Sleep(1000);
+                    Thread.Sleep(100);
                     Console.Clear();
                 }
             }

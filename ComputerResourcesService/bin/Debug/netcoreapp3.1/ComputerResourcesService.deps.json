@@ -8,7 +8,9 @@
     ".NETCoreApp,Version=v3.1": {
       "ComputerResourcesService/1.0.0": {
         "dependencies": {
-          "LibreHardwareMonitorLib": "0.8.7",
+          "ComputerResourcesBase": "1.0.0",
+          "LibreHardwareMonitorLib": "0.8.9",
+          "Newtonsoft.Json": "13.0.1",
           "System.Configuration.ConfigurationManager": "5.0.0"
         },
         "runtime": {
@@ -23,25 +25,40 @@
           }
         }
       },
-      "LibreHardwareMonitorLib/0.8.7": {
+      "LibreHardwareMonitorLib/0.8.9": {
         "dependencies": {
           "HidSharp": "2.1.0",
-          "Microsoft.Win32.Registry": "4.7.0",
-          "System.IO.Ports": "4.7.0",
-          "System.Management": "4.7.0"
+          "Microsoft.Win32.Registry": "5.0.0",
+          "System.IO.FileSystem.AccessControl": "5.0.0",
+          "System.IO.Ports": "5.0.1",
+          "System.Management": "5.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/LibreHardwareMonitorLib.dll": {
-            "assemblyVersion": "0.8.7.0",
-            "fileVersion": "0.8.7.0"
+            "assemblyVersion": "0.8.9.0",
+            "fileVersion": "0.8.9.0"
           }
         }
       },
       "Microsoft.NETCore.Platforms/5.0.0": {},
-      "Microsoft.Win32.Registry/4.7.0": {
+      "Microsoft.Win32.Registry/5.0.0": {
         "dependencies": {
           "System.Security.AccessControl": "5.0.0",
           "System.Security.Principal.Windows": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
         }
       },
       "Microsoft.Win32.SystemEvents/5.0.0": {
@@ -63,55 +80,63 @@
           }
         }
       },
-      "runtime.linux-arm.runtime.native.System.IO.Ports/4.7.0": {
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0": {
         "runtimeTargets": {
-          "runtimes/linux-arm/native/System.IO.Ports.Native.so": {
+          "runtimes/linux-arm/native/libSystem.IO.Ports.Native.so": {
             "rid": "linux-arm",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           }
         }
       },
-      "runtime.linux-arm64.runtime.native.System.IO.Ports/4.7.0": {
+      "runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0": {
         "runtimeTargets": {
-          "runtimes/linux-arm64/native/System.IO.Ports.Native.so": {
+          "runtimes/linux-arm64/native/libSystem.IO.Ports.Native.so": {
             "rid": "linux-arm64",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           }
         }
       },
-      "runtime.linux-x64.runtime.native.System.IO.Ports/4.7.0": {
+      "runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0": {
         "runtimeTargets": {
-          "runtimes/linux-x64/native/System.IO.Ports.Native.so": {
+          "runtimes/linux-x64/native/libSystem.IO.Ports.Native.so": {
             "rid": "linux-x64",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           }
         }
       },
-      "runtime.native.System.IO.Ports/4.7.0": {
+      "runtime.native.System.IO.Ports/5.0.1": {
         "dependencies": {
-          "runtime.linux-arm.runtime.native.System.IO.Ports": "4.7.0",
-          "runtime.linux-arm64.runtime.native.System.IO.Ports": "4.7.0",
-          "runtime.linux-x64.runtime.native.System.IO.Ports": "4.7.0",
-          "runtime.osx-x64.runtime.native.System.IO.Ports": "4.7.0"
+          "runtime.linux-arm.runtime.native.System.IO.Ports": "5.0.0",
+          "runtime.linux-arm64.runtime.native.System.IO.Ports": "5.0.0",
+          "runtime.linux-x64.runtime.native.System.IO.Ports": "5.0.0",
+          "runtime.osx-x64.runtime.native.System.IO.Ports": "5.0.0"
         }
       },
-      "runtime.osx-x64.runtime.native.System.IO.Ports/4.7.0": {
+      "runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0": {
         "runtimeTargets": {
-          "runtimes/osx-x64/native/System.IO.Ports.Native.dylib": {
+          "runtimes/osx-x64/native/libSystem.IO.Ports.Native.dylib": {
             "rid": "osx-x64",
             "assetType": "native",
             "fileVersion": "0.0.0.0"
           }
         }
       },
-      "System.CodeDom/4.7.0": {
+      "System.CodeDom/5.0.0": {
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {
-            "assemblyVersion": "4.0.3.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
           }
         }
       },
@@ -152,56 +177,76 @@
           }
         }
       },
-      "System.IO.Ports/4.7.0": {
+      "System.IO.FileSystem.AccessControl/5.0.0": {
         "dependencies": {
-          "Microsoft.Win32.Registry": "4.7.0",
-          "runtime.native.System.IO.Ports": "4.7.0"
+          "System.Security.AccessControl": "5.0.0",
+          "System.Security.Principal.Windows": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netstandard2.0/System.IO.FileSystem.AccessControl.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.20.51904"
+          }
+        }
+      },
+      "System.IO.Ports/5.0.1": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "5.0.0",
+          "runtime.native.System.IO.Ports": "5.0.1"
         },
         "runtime": {
           "lib/netstandard2.0/System.IO.Ports.dll": {
-            "assemblyVersion": "4.0.3.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.421.11614"
           }
         },
         "runtimeTargets": {
           "runtimes/linux/lib/netstandard2.0/System.IO.Ports.dll": {
             "rid": "linux",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.3.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.421.11614"
           },
           "runtimes/osx/lib/netstandard2.0/System.IO.Ports.dll": {
             "rid": "osx",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.3.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.421.11614"
           },
           "runtimes/win/lib/netstandard2.0/System.IO.Ports.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.3.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.421.11614"
           }
         }
       },
-      "System.Management/4.7.0": {
+      "System.Management/5.0.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "5.0.0",
-          "Microsoft.Win32.Registry": "4.7.0",
-          "System.CodeDom": "4.7.0"
+          "Microsoft.Win32.Registry": "5.0.0",
+          "System.CodeDom": "5.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/System.Management.dll": {
-            "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "5.0.20.51904"
           }
         },
         "runtimeTargets": {
           "runtimes/win/lib/netcoreapp2.0/System.Management.dll": {
             "rid": "win",
             "assetType": "runtime",
-            "assemblyVersion": "4.0.1.0",
-            "fileVersion": "4.700.19.56404"
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "5.0.20.51904"
           }
         }
       },
@@ -293,6 +338,11 @@
             "fileVersion": "5.0.20.51904"
           }
         }
+      },
+      "ComputerResourcesBase/1.0.0": {
+        "runtime": {
+          "ComputerResourcesBase.dll": {}
+        }
       }
     }
   },
@@ -309,12 +359,12 @@
       "path": "hidsharp/2.1.0",
       "hashPath": "hidsharp.2.1.0.nupkg.sha512"
     },
-    "LibreHardwareMonitorLib/0.8.7": {
+    "LibreHardwareMonitorLib/0.8.9": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-10LeYyHoQA3Vr6R1kpDd4BkJpdWohar7qHtTaCDiIq2n7LlXTtebjfnjXMsSASuBphOpexQ9xj17SgjdSfPjaQ==",
-      "path": "librehardwaremonitorlib/0.8.7",
-      "hashPath": "librehardwaremonitorlib.0.8.7.nupkg.sha512"
+      "sha512": "sha512-e0axsjvbjtQLdsuL25PwYgPsOAZjDORY+K+qgvtvUh8Rt4P/t+Xk0sDKRCHVcTlr/J6UGWKcd0dhmE5v25ujqQ==",
+      "path": "librehardwaremonitorlib/0.8.9",
+      "hashPath": "librehardwaremonitorlib.0.8.9.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/5.0.0": {
       "type": "package",
@@ -323,12 +373,12 @@
       "path": "microsoft.netcore.platforms/5.0.0",
       "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
     },
-    "Microsoft.Win32.Registry/4.7.0": {
+    "Microsoft.Win32.Registry/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
-      "path": "microsoft.win32.registry/4.7.0",
-      "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+      "sha512": "sha512-dDoKi0PnDz31yAyETfRntsLArTlVAVzUzCIvvEDsDsucrl33Dl8pIJG06ePTJTI3tGpeyHS9Cq7Foc/s4EeKcg==",
+      "path": "microsoft.win32.registry/5.0.0",
+      "hashPath": "microsoft.win32.registry.5.0.0.nupkg.sha512"
     },
     "Microsoft.Win32.SystemEvents/5.0.0": {
       "type": "package",
@@ -337,47 +387,54 @@
       "path": "microsoft.win32.systemevents/5.0.0",
       "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
     },
-    "runtime.linux-arm.runtime.native.System.IO.Ports/4.7.0": {
+    "Newtonsoft.Json/13.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pCaX07mRrO11GfUb+whjn2AJgCofx26slw0sI3XC9v0pEZO8101iK6q4ymZOiI2M4a9sQxLr2LawAEDvF4RNXg==",
-      "path": "runtime.linux-arm.runtime.native.system.io.ports/4.7.0",
-      "hashPath": "runtime.linux-arm.runtime.native.system.io.ports.4.7.0.nupkg.sha512"
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
     },
-    "runtime.linux-arm64.runtime.native.System.IO.Ports/4.7.0": {
+    "runtime.linux-arm.runtime.native.System.IO.Ports/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-/J6A4bexUUJciGUwrhtzrFW4tIHqoJYlCsz5RudRmqUaqvuG2tjrbn6bEopOFs7CU4gZqAKWcU9pkp180c3DkQ==",
-      "path": "runtime.linux-arm64.runtime.native.system.io.ports/4.7.0",
-      "hashPath": "runtime.linux-arm64.runtime.native.system.io.ports.4.7.0.nupkg.sha512"
+      "sha512": "sha512-mHgdZplUo48ThUaZB3S3M0alxAcHU7R3GLxNbsBzwShKTBn6vHO31YP4PQT+nbOkc/ErieFP2cSkBA/pbH3Hsw==",
+      "path": "runtime.linux-arm.runtime.native.system.io.ports/5.0.0",
+      "hashPath": "runtime.linux-arm.runtime.native.system.io.ports.5.0.0.nupkg.sha512"
     },
-    "runtime.linux-x64.runtime.native.System.IO.Ports/4.7.0": {
+    "runtime.linux-arm64.runtime.native.System.IO.Ports/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-aaaiH4ttfkLizo0OKf++5kPN0yxKbgzcyAD3w52Y3YP96aB/M79fm0r06SedXJGv86Iou6ipj3wUQBMFaL8LnQ==",
-      "path": "runtime.linux-x64.runtime.native.system.io.ports/4.7.0",
-      "hashPath": "runtime.linux-x64.runtime.native.system.io.ports.4.7.0.nupkg.sha512"
+      "sha512": "sha512-2vSH+NumQa1hwccFfn+ISDQnkPcGviVd6is+TuM7HwcPkbE2WY64q1E6nAulm7E+62Loxx3b9bS2sSazjM6bfw==",
+      "path": "runtime.linux-arm64.runtime.native.system.io.ports/5.0.0",
+      "hashPath": "runtime.linux-arm64.runtime.native.system.io.ports.5.0.0.nupkg.sha512"
     },
-    "runtime.native.System.IO.Ports/4.7.0": {
+    "runtime.linux-x64.runtime.native.System.IO.Ports/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-yidiZEGEIOyGnRkZvoV6XbeqzEBg9L47PyZNBymLIsu9HHseF98wiOxR6RnHmMqQMTBlc/EONfw4NT3pw0S6YQ==",
-      "path": "runtime.native.system.io.ports/4.7.0",
-      "hashPath": "runtime.native.system.io.ports.4.7.0.nupkg.sha512"
+      "sha512": "sha512-aagetZzzxDXxiGKrdyB1gxIHPRzeunUYTbV9aqprVe+iKVgi474I8fTVaxiZjwxDMeB3bWnOmpa4hgsiFXQ9GA==",
+      "path": "runtime.linux-x64.runtime.native.system.io.ports/5.0.0",
+      "hashPath": "runtime.linux-x64.runtime.native.system.io.ports.5.0.0.nupkg.sha512"
     },
-    "runtime.osx-x64.runtime.native.System.IO.Ports/4.7.0": {
+    "runtime.native.System.IO.Ports/5.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-c1h87v6gopjfeAu3WhVGguUhzCdpZFqX8oXrevO1ciuH4g/mFrxnzlo5POlp+TtZdQ1i8yu0ZzBMKbmX2bJJ0g==",
-      "path": "runtime.osx-x64.runtime.native.system.io.ports/4.7.0",
-      "hashPath": "runtime.osx-x64.runtime.native.system.io.ports.4.7.0.nupkg.sha512"
+      "sha512": "sha512-ihV5cOJiQ1+IyxFtCZuQfW8C7KhUUTaGRCYt9y7g14Xt+LcqsMJ8Pb/ANr7OmTPCa7SKcvwKQVYcN8xKQB55pA==",
+      "path": "runtime.native.system.io.ports/5.0.1",
+      "hashPath": "runtime.native.system.io.ports.5.0.1.nupkg.sha512"
     },
-    "System.CodeDom/4.7.0": {
+    "runtime.osx-x64.runtime.native.System.IO.Ports/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Hs9pw/kmvH3lXaZ1LFKj3pLQsiGfj2xo3sxSzwiLlRL6UcMZUTeCfoJ9Udalvn3yq5dLlPEZzYegrTQ1/LhPOQ==",
-      "path": "system.codedom/4.7.0",
-      "hashPath": "system.codedom.4.7.0.nupkg.sha512"
+      "sha512": "sha512-KOWNOPDzXNZkKHwfCs9gBzJS1JeOli7fBmI93l92FcTb/42Fc0ojKYL9gUZANYtM7x5nRPPzUJtW29klkt+2Zw==",
+      "path": "runtime.osx-x64.runtime.native.system.io.ports/5.0.0",
+      "hashPath": "runtime.osx-x64.runtime.native.system.io.ports.5.0.0.nupkg.sha512"
+    },
+    "System.CodeDom/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JPJArwA1kdj8qDAkY2XGjSWoYnqiM7q/3yRNkt6n28Mnn95MuEGkZXUbPBf7qc3IjwrGY5ttQon7yqHZyQJmOQ==",
+      "path": "system.codedom/5.0.0",
+      "hashPath": "system.codedom.5.0.0.nupkg.sha512"
     },
     "System.Configuration.ConfigurationManager/5.0.0": {
       "type": "package",
@@ -393,19 +450,26 @@
       "path": "system.drawing.common/5.0.0",
       "hashPath": "system.drawing.common.5.0.0.nupkg.sha512"
     },
-    "System.IO.Ports/4.7.0": {
+    "System.IO.FileSystem.AccessControl/5.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-tNHiZcdskfRpxU7LBBlA69YYgBqWMBE/JDdmrEIDa4iw944VK1u4+B0FeSls1FUm+Pm4X/Fl0fSGqi8MDhb8/Q==",
-      "path": "system.io.ports/4.7.0",
-      "hashPath": "system.io.ports.4.7.0.nupkg.sha512"
+      "sha512": "sha512-SxHB3nuNrpptVk+vZ/F+7OHEpoHUIKKMl02bUmYHQr1r+glbZQxs7pRtsf4ENO29TVm2TH3AEeep2fJcy92oYw==",
+      "path": "system.io.filesystem.accesscontrol/5.0.0",
+      "hashPath": "system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512"
     },
-    "System.Management/4.7.0": {
+    "System.IO.Ports/5.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IY+uuGhgzWiCg21i8IvQeY/Z7m1tX8VuPF+ludfn7iTCaccTtJo5HkjZbBEL8kbBubKhAKKtNXr7uMtmAc28Pw==",
-      "path": "system.management/4.7.0",
-      "hashPath": "system.management.4.7.0.nupkg.sha512"
+      "sha512": "sha512-cOfs0q0+lmq8oXgIeYDzzT2IxQ0gIij2/awNDXn3OjykDii26EgzzY09BhabUlxt3rwGNpAOxYkdac5udWWJgQ==",
+      "path": "system.io.ports/5.0.1",
+      "hashPath": "system.io.ports.5.0.1.nupkg.sha512"
+    },
+    "System.Management/5.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MF1CHaRcC+MLFdnDthv4/bKWBZnlnSpkGqa87pKukQefgEdwtb9zFW6zs0GjPp73qtpYYg4q6PEKbzJbxCpKfw==",
+      "path": "system.management/5.0.0",
+      "hashPath": "system.management.5.0.0.nupkg.sha512"
     },
     "System.Security.AccessControl/5.0.0": {
       "type": "package",
@@ -441,6 +505,11 @@
       "sha512": "sha512-c1ho9WU9ZxMZawML+ssPKZfdnrg/OjR3pe0m9v8230z3acqphwvPJqzAkH54xRYm5ntZHGG1EPP3sux9H3qSPg==",
       "path": "system.windows.extensions/5.0.0",
       "hashPath": "system.windows.extensions.5.0.0.nupkg.sha512"
+    },
+    "ComputerResourcesBase/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

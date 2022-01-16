@@ -1,5 +1,5 @@
-﻿using ComputerResourcesService.Abstract;
-using ComputerResourcesService.Concrete.DTO;
+﻿using ComputerResourcesBase.Abstract;
+using ComputerResourcesBase;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
